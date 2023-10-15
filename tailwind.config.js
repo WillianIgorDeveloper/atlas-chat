@@ -3,6 +3,9 @@ module.exports = {
 	darkMode: ["class"],
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
+		fontFamily: {
+			sans: ["Fira Sans", "sans-serif"],
+		},
 		container: {
 			center: true,
 			padding: "2rem",
@@ -11,6 +14,10 @@ module.exports = {
 			},
 		},
 		extend: {
+			backgroundImage: {
+				"brand-gradient":
+					"conic-gradient(at 100% 0%, rgb(125, 211, 252), rgb(14, 165, 233), rgb(29, 78, 216))",
+			},
 			keyframes: {
 				"accordion-down": {
 					from: { height: 0 },
