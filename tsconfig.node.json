@@ -21,7 +21,12 @@
     /* Path */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@pages/*": ["./src/presentation/pages/*"],
+      "@layouts/*": ["./src/presentation/layouts/*"],
+      "@middleware": ["./src/middleware/index"],
+      "@ui/*": ["./src/presentation/components/ui/*"],
+      "@composed/*": ["./src/presentation/components/composed/*"]
     }
   },
   "include": ["vite.config.ts"]
