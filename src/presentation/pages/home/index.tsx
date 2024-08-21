@@ -1,5 +1,5 @@
-import { ThemeToggle } from "@composed/theme/theme-toggler"
 import { ROUTES } from "@/utils/routes"
+import { ThemeToggle } from "@composed/theme/theme-toggler"
 import { Button } from "@ui/button"
 import { Link } from "react-router-dom"
 
