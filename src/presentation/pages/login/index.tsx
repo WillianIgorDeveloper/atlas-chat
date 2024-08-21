@@ -1,3 +1,4 @@
+import { useAuth } from "@/presentation/hooks/auth"
 import { Button } from "@ui/button"
 import { Input } from "@ui/input"
 import { Label } from "@ui/label"
@@ -6,6 +7,7 @@ import { EyeIcon, EyeOffIcon, Loader2Icon } from "lucide-react"
 import { Link } from "react-router-dom"
 
 export function LoginPage() {
+  const { signInWithGithub } = useAuth()
   return (
     <div className="h-screen flex">
       <div className="lg:flex-1 bg-primary flex items-center justify-center relative">
@@ -37,6 +39,7 @@ export function LoginPage() {
           <Button className="w-full hover:opacity-80">Sign in</Button>
         </form>
         <Separator className="my-3 max-w-sm mx-auto" />
+        <Button onClick={signInWithGithub}>Login with github</Button>
         <div className="w-full flex items-center justify-between p-3 bg-muted rounded my-3 max-w-sm mx-auto">
           <div className="flex gap-3 items-center">
             <img src="./icon.png" alt="Hades" className="w-10 h-10" />

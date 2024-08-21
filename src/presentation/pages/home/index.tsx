@@ -11,7 +11,7 @@ export function HomePage() {
           <h1 className="text-xl font-bold">Atlas chat</h1>
           <div className="flex items-center gap-3">
             <ThemeToggle />
-            <Link to={ROUTES.LOGIN}>
+            <Link to={ROUTES.APP}>
               <Button>Get Started</Button>
             </Link>
           </div>
