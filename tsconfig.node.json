@@ -26,7 +26,8 @@
       "@layouts/*": ["./src/presentation/layouts/*"],
       "@middleware": ["./src/middleware/index"],
       "@ui/*": ["./src/presentation/components/ui/*"],
-      "@composed/*": ["./src/presentation/components/composed/*"]
+      "@composed/*": ["./src/presentation/components/composed/*"],
+      "@contexts/*": ["./src/presentation/contexts/*"]
     }
   },
   "include": ["vite.config.ts"]

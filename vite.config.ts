@@ -12,6 +12,7 @@ export default defineConfig({
       "@middleware": path.resolve(__dirname, "./src/middleware"),
       "@ui": path.resolve(__dirname, "./src/presentation/components/ui"),
       "@composed": path.resolve(__dirname, "./src/presentation/components/composed"),
+      "@contexts": path.resolve(__dirname, "./src/presentation/contexts"),
     },
   },
 })
